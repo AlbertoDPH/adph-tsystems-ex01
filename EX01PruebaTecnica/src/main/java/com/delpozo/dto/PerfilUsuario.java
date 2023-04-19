@@ -1,5 +1,7 @@
 package com.delpozo.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -18,6 +20,7 @@ public class PerfilUsuario {
 	private int id;
 	private String nombre_jugador;
 
+	@JsonIgnore
 	@OneToOne
 	@JoinColumn(name = "usuario_id")
 	private Usuario usuario;

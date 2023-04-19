@@ -1,13 +1,12 @@
 package com.delpozo.dto;
 
 import java.util.List;
-
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
@@ -22,8 +21,8 @@ public class VideoJuego {
 	private String nombre;
 	private String genero;
 
-	@OneToMany
-	@JoinColumn(name = "videojuego")
+	@JsonIgnore
+	@OneToMany(mappedBy = "videoJuego", cascade = CascadeType.ALL)
 	private List<Partida> partidas;
 
 	// Constructores
