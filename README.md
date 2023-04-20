@@ -81,9 +81,10 @@ En la raíz principal del proyecto, tenemos el fichero **pom.xml **en el cual se
 
 ------------
 ### Módelo ER y Módelo Relacional
-Enlace [Modelo ER y Moldelo Relacional](https://github.com/AlbertoDPH/adph-tsystems-ex01/tree/master/EX01PruebaTecnica "Modelo ER y Moldelo Relacional")
+[Modelo ER y Moldelo Relacional](https://github.com/AlbertoDPH/adph-tsystems-ex01/blob/master/EX01_PruebaTecnica.jpg)
 
-Enlace [Consultas Postman Json](https://github.com/AlbertoDPH/adph-tsystems-ex01/blob/master/Consultas%20postman%20EX01.postman_collection.json "Consultas Postman Json")
+### Consultas Postman Json
+[Consultas Postman Json](https://github.com/AlbertoDPH/adph-tsystems-ex01/blob/master/Consultas%20postman%20EX01.postman_collection.json "Consultas Postman Json")
 
 
 ------------
