@@ -37,12 +37,12 @@ Controla las operaciones de la base de datos para la entidad Usuario
 **IVideoJuegoDAO**
 Controla las operaciones de la base de datos para la entidad PerfilUsuario.
 
->** Las rutas de la API siguen un patrón similar en cada controlador**
+**Las rutas de la API siguen un patrón similar en cada controlador**
 GET /api/entidad:				Lista todas las instancias de la entidad.
 POST /api/entidad:				Crea una nueva instancia de la entidad.
 GET /api/entidad/{id}: 			Obtiene una instancia específica de la entidad por su ID.
 PUT /api/entidad/{id}: 			Actualiza una instancia específica de la entidad por su ID.
-DELETE /api/entidad/{id}: 		Elimina una instancia específica de la entidad por su ID.****
+DELETE /api/entidad/{id}: 		Elimina una instancia específica de la entidad por su ID.
   
 **dto** 
 En este paquete encontraremos todas las entidades que usa la app, en la cual se definen los atributos que tiene cada una de ellas y se crean objetos para poderlos instanciar a en las clases que se necesiten. Esto nos permite separar los datos de la lógica y de esta forma mejora el mantenimiento del sistema.
@@ -65,25 +65,23 @@ la usaremos para separar las distintas funcionalidades de la app. En ella encont
 Estas funciones se desarrollarán en el mismo paquete, en clases diferentes y estarán preparadas para ser llamadas los controladores con la anotación @Autowired
 
 **Las interfaces service:**
-
-**ImensajeService**
-**IpartidaService**
-**IperfilUsuarioService**
-**IusuarioService**
-**IvideoJuegoService**
+Esta interfaz define los métodos para realizar operaciones CRUD en cada una de las entidades.
+**ImensajeService**, **IpartidaService**, **IperfilUsuarioService**, **IusuarioService**, **IvideoJuegoService**
 
 **  Las entidades service:**
+Todas las entidades implementan de su correspondiente interfaz y cada una de ellas permiten el acceso a datos (DAO) para poder realizar las operaciones CRUD en cada entidad.
+**MensajeService**, **PartidaService**, **PerfilUsuarioService**, **UsuarioService**, **VideoJuegoService**
 
-**MensajeService**
-**PartidaService**
-**PerfilUsuarioService**
-**UsuarioService**
-**VideoJuegoService**
-  
+------------
 Además, en el mismo paquete principal **com.delpozo** deben estar la clase principal del proyecto en este caso: **Ex01PruebaTecnicaApplication** y la clase **ServletInitializer** utiliza en aplicaciones Spring Boot para el inicio de la app.
 
 En el paquete **data.sql**, encontraremos **applicatiom.properties** que contiene la información de la app, como la conexión con la pagina web y en este mismo paquete contendrá el fichero de BBDD **data.sql** ya que como motor de BBDD se ha usado **H2**
 
-En la raíz principal del proyecto, tenemos el fichero **pom.xml **en el cual se encuentran toda la configuración de **Maven** que se utilizara para gestionar las dependencias que hayan sido seleccionadas para la creación del proyecto.
+En la raíz principal del proyecto, tenemos el fichero **pom.xml **en el cual se encuentra toda la configuración de **Maven** que se utilizara para gestionar las dependencias que hayan sido seleccionadas para la creación del proyecto.
 
-El Módelo ER y Módelo Relacional se encuentra el fichero **EX01_PruebaTecnica.jpg**  adjuntado en este repositorio.
+------------
+## Módelo ER y Módelo Relacional
+Se adjunta enlace en el que se encuentra tanto el Modelo ER como el Modelo Relacional del proyecto
+[![ModeloER](ModeloER "ModeloER")](https://github.com/AlbertoDPH/adph-tsystems-ex01/blob/master/EX01_PruebaTecnica.jpg "ModeloER")
+
+------------
