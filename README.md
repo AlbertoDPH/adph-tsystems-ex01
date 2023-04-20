@@ -68,7 +68,7 @@ Estas funciones se desarrollarán en el mismo paquete, en clases diferentes y es
 Esta interfaz define los métodos para realizar operaciones CRUD en cada una de las entidades.
 **ImensajeService**, **IpartidaService**, **IperfilUsuarioService**, **IusuarioService**, **IvideoJuegoService**
 
-**  Las entidades service:**
+**Las entidades service:**
 Todas las entidades implementan de su correspondiente interfaz y cada una de ellas permiten el acceso a datos (DAO) para poder realizar las operaciones CRUD en cada entidad.
 **MensajeService**, **PartidaService**, **PerfilUsuarioService**, **UsuarioService**, **VideoJuegoService**
 
