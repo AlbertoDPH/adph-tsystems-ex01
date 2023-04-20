@@ -80,8 +80,10 @@ En el paquete **data.sql**, encontraremos **applicatiom.properties** que contien
 En la raíz principal del proyecto, tenemos el fichero **pom.xml **en el cual se encuentra toda la configuración de **Maven** que se utilizara para gestionar las dependencias que hayan sido seleccionadas para la creación del proyecto.
 
 ------------
-## Módelo ER y Módelo Relacional
-Se adjunta enlace en el que se encuentra tanto el Modelo ER como el Modelo Relacional del proyecto
-[![ModeloER](ModeloER "ModeloER")](https://github.com/AlbertoDPH/adph-tsystems-ex01/blob/master/EX01_PruebaTecnica.jpg "ModeloER")
+### Módelo ER y Módelo Relacional
+Enlace [Modelo ER y Moldelo Relacional](https://github.com/AlbertoDPH/adph-tsystems-ex01/tree/master/EX01PruebaTecnica "Modelo ER y Moldelo Relacional")
+
+Enlace [Consultas Postman Json](https://github.com/AlbertoDPH/adph-tsystems-ex01/blob/master/Consultas%20postman%20EX01.postman_collection.json "Consultas Postman Json")
+
 
 ------------
